@@ -226,7 +226,6 @@ ul li::before {
   75% { transform: rotate(1.5deg); }
 }
 
-.quote-form {
   margin-top: 2rem;
   background: rgba(255, 255, 255, 0.75);
   padding: 2rem;
@@ -235,8 +234,6 @@ ul li::before {
   backdrop-filter: blur(3px);
 }
 
-.quote-form input,
-.quote-form textarea {
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.5rem;
@@ -246,6 +243,5 @@ ul li::before {
   margin-bottom: 1rem;
 }
 
-.quote-form button {
   margin-top: 1rem;
 }
