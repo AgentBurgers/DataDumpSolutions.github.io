@@ -26,6 +26,13 @@ header {
     color: #c0d8f0;
 }
 
+.slogan {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-top: 0.5rem;
+}
+
 section {
     padding: 2rem;
     max-width: 800px;
