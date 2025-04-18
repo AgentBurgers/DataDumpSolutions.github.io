@@ -22,7 +22,10 @@ header {
   width: 100px;
   height: auto;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 4px #1e90ff);
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #1e90ff 0%, #0a0f1a 80%);
+  padding: 10px;
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.8);
 }
 
 .tagline {
@@ -95,16 +98,6 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .logo {
-    width: 80px;
-  }
-  section {
-    padding: 2rem 1rem;
-  }
-}
-
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -114,4 +107,16 @@ footer {
 @keyframes slideUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 80px;
+    padding: 6px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
 }
