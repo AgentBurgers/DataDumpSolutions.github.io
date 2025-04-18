@@ -226,6 +226,7 @@ ul li::before {
   75% { transform: rotate(1.5deg); }
 }
 
+.quote-form {
   margin-top: 2rem;
   background: rgba(255, 255, 255, 0.75);
   padding: 2rem;
@@ -234,6 +235,8 @@ ul li::before {
   backdrop-filter: blur(3px);
 }
 
+.quote-form input,
+.quote-form textarea {
   width: 100%;
   padding: 0.75rem;
   margin-top: 0.5rem;
@@ -243,5 +246,51 @@ ul li::before {
   margin-bottom: 1rem;
 }
 
+.quote-form button {
   margin-top: 1rem;
+}
+
+
+/* Tech grid pattern background */
+body {
+  background-image: linear-gradient(to bottom, #b0e0e6, #e0ffff), url('https://www.transparenttextures.com/patterns/circles.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/* Section overlay tech grid */
+section {
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: 200px;
+}
+
+/* Add a digital glow border to header and footer */
+header, footer {
+  border: 2px solid rgba(0, 128, 255, 0.2);
+  box-shadow: inset 0 0 12px rgba(0, 128, 255, 0.2);
+}
+
+/* Optional animated glowing underline on h2 */
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100px;
+  background: linear-gradient(to right, #4fd1ff, #38bdf8);
+  box-shadow: 0 0 6px rgba(0, 128, 255, 0.5);
+  border-radius: 2px;
+  animation: pulseGlow 2s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% { width: 100px; opacity: 0.6; }
+  100% { width: 160px; opacity: 1; }
 }
