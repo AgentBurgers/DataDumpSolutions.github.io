@@ -3,16 +3,17 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #1f2d3d;
+    background-color: #0d1117;
+    color: #c9d1d9;
     line-height: 1.6;
 }
 
 header {
     text-align: center;
-    padding: 2rem;
-    background-color: #0d1a26;
+    padding: 2.5rem 1rem;
+    background: linear-gradient(135deg, #0d1a26, #1c2e40);
     color: white;
+    border-bottom: 3px solid #2ea5ff;
 }
 
 .logo {
@@ -20,29 +21,35 @@ header {
     height: auto;
     margin: 0 auto 1rem;
     display: block;
+    filter: drop-shadow(0px 0px 4px rgba(46,165,255,0.6));
 }
 
 .tagline {
     font-style: italic;
-    color: #c0d8f0;
+    color: #58a6ff;
+    font-size: 1.1rem;
 }
 
 .slogan {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: #5fbcd3;  /* Harmonized with site theme (blue tone) */
-    margin-top: 0.5rem;
+    color: #2ea5ff;
+    margin-top: 0.75rem;
 }
 
 section {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
+    background-color: #161b22;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 
 h2 {
-    color: #003366;
-    border-bottom: 2px solid #cce0f0;
+    color: #2ea5ff;
+    border-bottom: 2px solid #30363d;
     padding-bottom: 0.3rem;
 }
 
@@ -53,12 +60,18 @@ ul {
 
 ul li {
     margin-bottom: 1.2rem;
+    background-color: #21262d;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #c9d1d9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 footer {
     text-align: center;
-    padding: 1rem;
-    background-color: #f5f5f5;
-    color: #666;
+    padding: 1.2rem;
+    background-color: #0d1117;
+    color: #8b949e;
     font-size: 0.9rem;
+    margin-top: 2rem;
 }
