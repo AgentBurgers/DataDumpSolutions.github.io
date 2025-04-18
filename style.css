@@ -16,9 +16,10 @@ header {
 }
 
 .logo {
-    width: 100px;
+    width: 140px;
     height: auto;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    display: block;
 }
 
 .tagline {
