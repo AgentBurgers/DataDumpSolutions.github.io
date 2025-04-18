@@ -1,21 +1,20 @@
 
 body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #0a0f1a;
-  color: #d0d8e0;
-  line-height: 1.6;
-  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to bottom, #b0e0e6, #e0ffff);
+  color: #003366;
+  overflow-x: hidden;
 }
 
 header {
   text-align: center;
-  padding: 2.5rem 1rem;
-  background: linear-gradient(to right, #0a192f, #0f2537);
-  color: white;
-  border-bottom: 3px solid #1e90ff;
-  animation: fadeIn 1s ease-in-out;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #d0f0fd, #aee1f9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid #80dfff;
+  position: relative;
 }
 
 .logo {
@@ -23,41 +22,38 @@ header {
   height: auto;
   margin-bottom: 1rem;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #1e90ff 0%, #0a0f1a 80%);
+  background: radial-gradient(circle, #ffffff 60%, #d0f0fd 100%);
   padding: 10px;
-  box-shadow: 0 0 25px rgba(30, 144, 255, 0.9);
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
 }
 
 .tagline {
   font-style: italic;
-  color: #60a5fa;
-  margin-top: 0.5rem;
+  color: #0077b6;
 }
 
 .slogan {
-  font-size: 1.2rem;
   font-weight: bold;
-  color: #38bdf8;
+  font-size: 1.3rem;
+  color: #005b8f;
   margin-top: 0.5rem;
-  animation: slideUp 1.2s ease-out;
 }
 
 section {
-  padding: 2.5rem 1.2rem;
-  max-width: 1000px;
-  margin: auto;
-  background-color: #111827;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(30,144,255,0.2);
-  margin-top: 2rem;
-  animation: fadeIn 1.5s ease-in;
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
 }
 
 h2 {
-  color: #1e90ff;
-  border-bottom: 2px solid #334155;
+  color: #004e8f;
+  border-bottom: 2px solid #80cfff;
   padding-bottom: 0.3rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 ul {
@@ -66,85 +62,190 @@ ul {
 }
 
 ul li {
-  background-color: #1f2937;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #3b82f6;
-  border-radius: 6px;
+  border-left: 6px solid #5ecbf2;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 ul li:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(30,144,255,0.3);
+  box-shadow: 0 4px 12px rgba(0, 128, 255, 0.2);
 }
 
 a {
-  color: #60a5fa;
+  color: #007acc;
   text-decoration: none;
 }
 
 a:hover {
-  color: #38bdf8;
-  text-shadow: 0 0 5px #3b82f6;
+  color: #005f99;
+  text-decoration: underline;
 }
 
 footer {
+  background: linear-gradient(to top, #d0f0fd, #b0e0e6);
+  color: #003366;
   text-align: center;
   padding: 1.5rem;
-  background-color: #0a0f1a;
-  color: #64748b;
   font-size: 0.9rem;
   margin-top: 3rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
   .logo {
-    width: 80px;
-    padding: 6px;
+    width: 100px;
   }
 
   section {
-    padding: 2rem 1rem;
+    margin: 1.5rem;
+    padding: 1.5rem;
   }
 }
 
 
-button, .btn {
-  display: inline-block;
-  background-color: #1e90ff;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
+/* Curved Header */
+header {
+  border-bottom-left-radius: 60% 20%;
+  border-bottom-right-radius: 60% 20%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glassy Navigation Bar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+nav a {
+  font-weight: bold;
+  color: #005b8f;
+  text-decoration: none;
   font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077b6;
+  text-shadow: 0 0 4px rgba(0, 128, 255, 0.3);
+}
+
+/* Floating Bubbles (Decorative Blobs) */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+body::before {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #c2f0ff, #ffffff00);
+  top: 10%;
+  left: -10%;
+  animation: floatBlob 20s ease-in-out infinite alternate;
+}
+
+body::after {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle at 70% 70%, #d0f0fd, #ffffff00);
+  bottom: 5%;
+  right: -15%;
+  animation: floatBlob 25s ease-in-out infinite alternate;
+}
+
+@keyframes floatBlob {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-20px) scale(1.1); }
+}
+
+/* Add top padding to avoid nav overlap */
+body {
+  padding-top: 80px;
+}
+
+
+/* Jelly-style Call to Action Button */
+.cta {
+  display: inline-block;
+  margin: 2rem auto 1rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #4fd1ff, #38bdf8);
+  color: white;
+  font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px rgba(30,144,255,0.6);
-  transition: all 0.3s ease;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(0, 128, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  text-decoration: none;
+  text-align: center;
+  animation: jellyPop 2.5s infinite ease-in-out;
 }
 
-button:hover, .btn:hover {
-  background-color: #38bdf8;
-  box-shadow: 0 0 16px rgba(30,144,255,0.8);
-  transform: translateY(-2px);
+.cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 128, 255, 0.5);
 }
 
-h2:hover {
-  text-shadow: 0 0 6px #3b82f6;
-  color: #38bdf8;
+@keyframes jellyPop {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04) rotate(0.5deg); }
+}
+
+/* Animated Icon Wobble for service items */
+ul li::before {
+  content: "💾";
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-size: 1.3rem;
+  animation: wobble 2.5s infinite ease-in-out;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  75% { transform: rotate(1.5deg); }
+}
+
+.quote-form {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 2px solid #80dfff;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.quote-form button {
+  margin-top: 1rem;
 }
