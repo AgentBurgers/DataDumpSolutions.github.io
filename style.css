@@ -148,3 +148,218 @@ h2:hover {
   text-shadow: 0 0 6px #3b82f6;
   color: #38bdf8;
 }
+
+body {
+  background: linear-gradient(to bottom right, #e6fff2, #ccf2e6), url('https://www.transparenttextures.com/patterns/circuits.png');
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+header, footer {
+  background: linear-gradient(to bottom, #c2f0c2, #dfffe2);
+  color: #033d1a;
+}
+
+h2, .slogan {
+  color: #137547;
+}
+
+ul li {
+  background: linear-gradient(to bottom right, #ebfff5, #d4ffe8);
+  border-left: 6px solid #4caf50;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.3);
+}
+
+ul li:hover {
+  box-shadow: 0 0 18px rgba(76, 175, 80, 0.5);
+  border-left-color: #2e7d32;
+}
+
+a {
+  color: #2e7d32;
+}
+
+a:hover {
+  color: #1b5e20;
+  text-shadow: 0 0 4px rgba(46, 125, 50, 0.4);
+}
+
+.contact-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(0,128,128,0.2);
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #064e3b;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border: 2px solid #a7f3d0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #f0fdfa;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  background: linear-gradient(to right, #10b981, #14b8a6);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0f766e;
+}
+
+section ul li {
+  background: linear-gradient(to bottom right, #ffffff, #e8f5e9);
+  color: #1b4332;
+  border-left: 6px solid #81c784;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  transition: all 0.3s ease;
+}
+
+section ul li:hover {
+  background: #f1fff7;
+  border-left-color: #4caf50;
+  box-shadow: 0 4px 14px rgba(76, 175, 80, 0.3);
+}
+
+section ul li strong {
+  color: #2e7d32;
+}
+
+section#about {
+  background: linear-gradient(to bottom right, #f9fff9, #eaf8ef);
+  color: #1b4332;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.15);
+  margin-bottom: 2rem;
+}
+
+section#about h2 {
+  color: #2e7d32;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  background: linear-gradient(to right, #eafaf1, #d0f0dc);
+  color: #2e7d32;
+  border-top: 1px solid #b2dfdb;
+  box-shadow: inset 0 2px 6px rgba(0, 128, 0, 0.1);
+  border-radius: 16px 16px 0 0;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+  background: linear-gradient(to right, #c8facc, #e0f7fa);
+  color: #134e4a;
+  border-top: 2px solid #a7e9af;
+  border-radius: 18px 18px 0 0;
+  box-shadow: inset 0 3px 8px rgba(50, 150, 100, 0.1);
+  font-weight: 500;
+}
+
+body {
+  background: linear-gradient(to bottom right, #e9fff1, #e0f7fa);
+  color: #134e4a;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  background: linear-gradient(to bottom right, #c7f9cc, #b2f7ef);
+  color: #1b4332;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid #a7e9af;
+  box-shadow: 0 4px 12px rgba(100, 180, 120, 0.15);
+}
+
+header .slogan {
+  background: linear-gradient(to right, #a7e9af, #b2f7ef);
+  color: #134e4a;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 100, 60, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: #dcfce7;
+  border-bottom: 1px solid #b2dfdb;
+  font-weight: bold;
+}
+
+nav a {
+  color: #106d4e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0a4d38;
+}
+
+section {
+  margin: 3rem auto;
+  max-width: 900px;
+  padding: 2rem;
+  border-radius: 18px;
+  background: linear-gradient(to bottom right, #ffffff, #eafaf1);
+  box-shadow: 0 0 12px rgba(120, 180, 150, 0.15);
+}
+
+section h2 {
+  color: #14532d;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+section ul li {
+  background: linear-gradient(to bottom right, #f6fff8, #e1f7ed);
+  color: #134e4a;
+  border-left: 6px solid #81c784;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+  margin-bottom: 1rem;
+}
+
+section ul li:hover {
+  background: #f0fffa;
+  border-left-color: #4caf50;
+  box-shadow: 0 4px 14px rgba(76, 175, 80, 0.3);
+}
+
+section ul li strong {
+  color: #2e7d32;
+}
