@@ -16,7 +16,7 @@ header {
 }
 
 .logo {
-    width: 140px;
+    width: 200px;
     height: auto;
     margin: 0 auto 1rem;
     display: block;
@@ -28,9 +28,9 @@ header {
 }
 
 .slogan {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #ffd700;
+    color: #5fbcd3;  /* Harmonized with site theme (blue tone) */
     margin-top: 0.5rem;
 }
 
