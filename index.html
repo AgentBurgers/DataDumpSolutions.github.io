@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div id="loading-overlay"><div class="loader"></div></div>
+<script>
+  window.addEventListener("load", function() {
+    document.getElementById("loading-overlay").classList.add("fade-out");
+  });
+</script>
   <header>
     <img src="datadump-logo.png" alt="Logo" class="logo" />
     <h1>DataDumpSolutions</h1>
