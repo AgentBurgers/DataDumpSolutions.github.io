@@ -19,13 +19,13 @@ header {
 }
 
 .logo {
-  width: 100px;
+  width: 140px;
   height: auto;
   margin-bottom: 1rem;
   border-radius: 50%;
   background: radial-gradient(circle at center, #1e90ff 0%, #0a0f1a 80%);
   padding: 10px;
-  box-shadow: 0 0 12px rgba(30, 144, 255, 0.8);
+  box-shadow: 0 0 25px rgba(30, 144, 255, 0.9);
 }
 
 .tagline {
@@ -119,4 +119,32 @@ footer {
   section {
     padding: 2rem 1rem;
   }
+}
+
+
+button, .btn {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(30,144,255,0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background-color: #38bdf8;
+  box-shadow: 0 0 16px rgba(30,144,255,0.8);
+  transform: translateY(-2px);
+}
+
+h2:hover {
+  text-shadow: 0 0 6px #3b82f6;
+  color: #38bdf8;
 }
