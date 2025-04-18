@@ -1,12 +1,11 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="favicon.ico" rel="icon" type="image/x-icon"/>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>DataDumpSolutions</title>
-<link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DataDump Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <div id="loading-overlay"><div class="loader"></div></div>
@@ -15,56 +14,52 @@
     document.getElementById("loading-overlay").classList.add("fade-out");
   });
 </script>
+
 <header>
-<img alt="Logo" class="logo" src="datadump-logo.png"/>
-<h1>DataDumpSolutions</h1>
-<p class="tagline">Responsible IT Waste &amp; Data Disposal Services</p>
-<p class="slogan">We Dump Data, Not Your Security.</p>
+  <img src="datadump-logo.png" alt="Logo" class="logo" />
+  <div class="slogan">We Dump Data, Not Your Security.</div>
 </header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <section id="about">
-<h2>About Us</h2>
-<p>We are a Houston-based IT asset disposal and e-waste recycling company committed to secure, eco-friendly practices for handling outdated electronics and sensitive data.</p>
+  <h2>About Us</h2>
+  <p>At DataDump Solutions, we combine secure data disposal with eco-conscious e-waste recycling. Born from a passion for both tech and the planet, our services are engineered to deliver reliability, transparency, and peace of mind.</p>
 </section>
+
 <section id="services">
-<h2>Our Services</h2>
-<ul>
-<li style=" animation-delay: 0.10s;"><img alt="Service Icon 1" src="icon1.png" style="width:48px; vertical-align:middle; margin-right:10px;"/><strong>E-Waste Collection &amp; Recycling:</strong> Responsible collection and recycling of outdated or unused electronics in compliance with environmental regulations.</li>
-<li style=" animation-delay: 0.25s;"><img alt="Service Icon 2" src="icon2.png" style="width:48px; vertical-align:middle; margin-right:10px;"/><strong>Data Destruction &amp; Device Sanitization:</strong> Secure data wiping and physical destruction to ensure complete information security before disposal.</li>
-<li style=" animation-delay: 0.40s;"><img alt="Service Icon 3" src="icon3.png" style="width:48px; vertical-align:middle; margin-right:10px;"/><strong>IT Asset Disposition (ITAD):</strong> End-to-end lifecycle management of retired IT assets, including inventory tracking and certified disposal.</li>
-<li style=" animation-delay: 0.55s;"><strong>Refurbishment &amp; Resale of Devices:</strong> Reconditioning usable hardware for resale, donation, or internal reuse — reducing landfill waste.</li>
-<li style=" animation-delay: 0.70s;"><strong>Compliance Reporting &amp; Certifications:</strong> Full documentation and reporting for HIPAA, R2, ISO, and other compliance needs.</li>
-</ul>
+  <h2>Our Services</h2>
+  <ul>
+    <li style="animation-delay: 0.1s;"><img src="icon1.png" alt=""><strong>E-Waste Collection & Recycling:</strong> We pick up and recycle outdated electronics responsibly.</li>
+    <li style="animation-delay: 0.25s;"><img src="icon2.png" alt=""><strong>Data Destruction & Sanitization:</strong> Your data is permanently destroyed using industry-standard protocols.</li>
+    <li style="animation-delay: 0.4s;"><img src="icon3.png" alt=""><strong>IT Asset Disposition:</strong> Full chain-of-custody asset lifecycle management.</li>
+    <li style="animation-delay: 0.55s;"><img src="icon4.png" alt=""><strong>Secure Pickup Logistics:</strong> We offer tamper-proof transport with tracking.</li>
+    <li style="animation-delay: 0.7s;"><img src="icon5.png" alt=""><strong>Compliance Reporting:</strong> Receive full audit trails for HIPAA, ISO, and R2 compliance.</li>
+  </ul>
 </section>
+
+<section id="clients">
+  <h2>Client Testimonials</h2>
+  <div class="testimonial-box">
+    <p>"DataDump Solutions gave us peace of mind and a clean asset trail. Highly recommend their secure pickups." – TechWave Inc.</p>
+    <p>"They made our office tech refresh smooth, secure, and sustainable." – NexaSystems</p>
+  </div>
+</section>
+
 <section id="contact">
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:DataDumpSolutions@protonmail.com">DataDumpSolutions@protonmail.com</a></p>
-<p>Phone: (832) 445-8434</p>
-<p>Website: <a href="https://www.DataDumpSolutions.com" target="_blank">www.DataDumpSolutions.com</a></p>
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:DataDumpSolutions@protonmail.com">DataDumpSolutions@protonmail.com</a></p>
+  <p>Phone: (832) 445-8434</p>
+  <p>Website: <a href="https://www.DataDumpSolutions.com" target="_blank">www.DataDumpSolutions.com</a></p>
 </section>
+
 <footer>
-<p>© 2025 DataDumpSolutions. All rights reserved.</p>
+  <p>© 2025 DataDumpSolutions. All rights reserved.</p>
 </footer>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-
-  document.querySelectorAll("section").forEach(section => {
-    observer.observe(section);
-  });
-});
-</script>
 </body>
-
 </html>
-
-

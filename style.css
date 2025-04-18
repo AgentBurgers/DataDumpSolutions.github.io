@@ -201,3 +201,51 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+.slogan {
+  background: linear-gradient(to right, #2af598, #009efd);
+  color: #ffffff;
+  padding: 1.25rem 2.5rem;
+  border-radius: 40px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  width: fit-content;
+  margin: 2rem auto;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  box-shadow: 0 0 15px rgba(0,255,128,0.3);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.3) 2px, transparent 3px),
+                    radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 2px);
+  background-size: 80px 80px, 120px 120px;
+  animation: floatBubbles 40s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@keyframes floatBubbles {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 1000px 800px, -800px 1000px;
+  }
+}
+
+body {
+  opacity: 0;
+  animation: fadePageIn 1s ease forwards;
+}
+
+@keyframes fadePageIn {
+  0% { opacity: 0; transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1); }
+}
